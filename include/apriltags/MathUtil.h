@@ -3,6 +3,8 @@
 #ifndef MATHUTIL_H
 #define MATHUTIL_H
 
+#define _USE_MATH_DEFINES
+#include <math.h>
 #include <cmath>
 #include <cfloat>
 #include <cstdlib>
@@ -28,7 +30,7 @@ public:
 	
 	//! Returns a result in [-Pi, Pi]
 	static inline float mod2pi(float vin) {
-		const float twopi = 2 * (float)M_PI;
+		const float twopi = 2.f * (float)(M_PI);
 		const float twopi_inv = 1.f / (2.f * (float)M_PI);
 		float absv = std::abs(vin);
 		float q = absv*twopi_inv + 0.5f;

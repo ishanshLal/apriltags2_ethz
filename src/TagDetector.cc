@@ -35,7 +35,7 @@ using namespace std;
 
 namespace AprilTags {
 
-  std::vector<TagDetection> TagDetector::extractTags(const cv::Mat& image) {
+  std::vector<TagDetection> TagDetector::extractTags(const cv::Mat& image) const {
 
     // convert to internal AprilTags image (todo: slow, change internally to OpenCV)
     int width = image.cols;

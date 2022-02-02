@@ -1,0 +1,8 @@
+{
+    "name": "apriltags2ethz",
+    "version-string": "0.9.5",
+    "dependencies": [
+        "opencv4",
+        "eigen3"
+    ]
+}

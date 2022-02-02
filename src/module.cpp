@@ -50,7 +50,6 @@ PYBIND11_MODULE(apriltags_eth, m) {
                cv_image.at<uchar>(i, j) = *image.data(i, j);
              }
            }
-
            return a.extractTags(cv_image);
          });
 
